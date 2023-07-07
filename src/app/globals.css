@@ -20,9 +20,11 @@ body {
 }
 
 #logo-container {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #logo {
@@ -32,16 +34,15 @@ body {
 }
 
 #form-container {
-  min-width: 500px;
+  min-width: 200px;
   width: 100%;
-  margin: 20px;
+  margin: 0px;
   background-color: whitesmoke;
   padding: 30px;
   border-radius: 10px;
 }
 
 #formulario {
-  width: 100%;
   display: block;
 }
 
