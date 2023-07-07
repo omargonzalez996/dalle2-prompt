@@ -2,26 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-cont {
+  display: block;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  filter: invert(100);
+}
+
+#form-container {
+  min-width: 500px;
+  width: 100%;
+  margin: 20px;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#formulario {
+  width: 100%;
+  display: block;
+}
+
+#input-prompt {
+  padding: 5px;
+  width: 100%;
+  height: 70px;
+  resize: none;
+  color: rgb(40, 40, 40);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(40, 40, 40);
+  outline: none;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#button-gen {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 11px 16px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.button-gen:active,
+.button-gen:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-gen {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
