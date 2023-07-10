@@ -34,8 +34,7 @@ body {
 }
 
 #form-container {
-  min-width: 200px;
-  width: 100%;
+  width: 400px;
   margin: 0px;
   background-color: whitesmoke;
   padding: 30px;
